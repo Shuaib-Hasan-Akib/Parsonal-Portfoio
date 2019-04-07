@@ -1,0 +1,533 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: #fff;
+}
+.underline-red{
+	width: 5rem;
+	height: .3rem;
+	margin: 1rem auto 2rem;
+	background-color: red;
+}
+li{
+	list-style: none;
+}
+.my-btn{
+	color: #fff;
+	padding: 15px 55px;
+	background-color: #ff0513;
+	border: none;
+	border-radius: 5px;
+	transition: .30s;
+	font-weight: bold;
+}
+.my-btn:hover{
+	background: #b92d35;
+	text-decoration: none;
+}
+.resume-btn{
+	padding: 15px 50px;
+	border-radius: 5px;
+	transition: .30s;
+	font-weight: bold;
+	border: 1px solid red;
+}
+.resume-btn a{
+	color: #000;
+}
+.resume-btn:hover{
+	background-color: red;
+	color: #fff;
+}
+
+	/*************
+	Header Section
+	**************/
+.page-header {
+	background: #0e0c38;
+}
+.share-container {
+	height: 100%;
+	position: relative;
+	left: 1rem;
+}
+.share-container::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 100%;
+	background: #717070;
+	left: 80%;
+	transform: translateX(-50%);
+}
+.share-widget {
+	background-color: #0d0d39;
+	z-index: 1;
+	margin-bottom: 15rem;
+}
+.share-widget li {
+	padding: .6rem 0;
+}
+.share-widget li a{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	display: flex;
+	border-radius: 50%;
+	transition: 0.5s;
+	width: 20px;
+	height: 20px;
+}
+.share-widget li a:hover{
+	color: #639c64;
+}
+
+.promo-container {
+	padding: 5vh 0;
+}
+
+.promo-header {
+	position: relative;
+	z-index: 1;
+	left: 13rem;
+	bottom: 4rem;
+}
+.promo-header::before {
+	position: absolute;
+	bottom: 135%;
+	left: -6%;
+	content: '';
+	background: url('../images/Mask Group 13.png') no-repeat left center;
+	width: 27rem;
+	height: 10rem;
+}
+
+.promo-picture {
+	position: relative;
+	left: 5rem;
+	bottom: 5rem;
+}
+
+.promo-picture::before, .promo-picture::after {
+	position: absolute;
+	font-size: 15rem;
+    color: #15133f;
+    top: 1rem;
+    font-weight: 700;
+}
+.promo-picture::before {
+	content: 'M';
+	left: -4rem;
+}
+.promo-picture::after {
+	content: 'H';
+	right: -2rem;
+}
+.page-header .nav-item{
+	padding-right: 1rem;
+	z-index: 3;
+}
+.page-header .nav-link{
+	padding-top: 1rem;
+	transition: .30s;
+	font-weight: bold;
+}
+.page-header .nav-item:last-child{
+	margin-right: 5rem;
+}
+.page-header .nav-item .nav-link:hover{
+	background: red;
+	color: #fff;
+}
+.page-header .nav-item .nav-link:active {
+	background: red;
+	color: #fff;
+}
+.promo-slider-indicator {
+	position: relative;
+}
+.promo-slider-list li{
+	margin-right: 2rem;
+}
+.promo-slider-indicator::after {
+	content: '';
+	position: absolute;
+	top: 150%;
+	left: 2rem;
+	background: url('../images/Mask Group 14.png') no-repeat left center;
+	width: 4em;
+	height: 16em;
+}
+.promo-slider-indicator li{
+	color: #6d6d6d;
+	border-bottom: 1px solid #6d6d6d;
+	padding: 3px 0;
+}
+
+
+	/**************
+	Service Section
+	***************/
+.my-services{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/Mask_Group_15.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #EEEFF0;
+	padding: 7rem 0;
+}
+.my-services .media p{
+	line-height: 2rem;
+}
+.my-services .media{
+	background: #fff;
+    padding: 2rem 0 0 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: .7rem !important;
+    transition: .3s;
+}
+.my-services .media:hover{
+	box-shadow: 5px 5px 50px 5px rgba(146, 126, 126, 0.68);
+	transform:  scale(.9);
+	filter: drop-shadow(0 20px 20px #fff);
+}
+
+	/***************
+	About Section
+	****************/
+.aboutme-container{
+	position: relative;
+}
+.play-button{
+	position: absolute;
+	top: 41%;
+	left: 40%;
+	/*transform: translateX(-50%) translateY(-50%);*/
+}
+.play-button img 
+{
+	transform: translateX(-6%) translateY(-0%);
+}
+.modal-dialog {
+     max-width: 800px;
+     margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+	
+.about-me {
+    background-color: #DADEE2;
+    padding: 40px 20px 70px 70px;
+}
+
+.about-me h3{
+	text-align: center;
+	font-weight: bold;
+	/*padding: 40px 0px 15px 0px;*/
+	font-size: 40px;
+}
+.about-me p{
+	padding: 10px 0;
+}
+
+	/***************
+	Skills Section
+	***************/
+.skill-area{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-color: #EEEFF0;
+}
+.skill-area h2{
+	font-weight: bold;
+	padding-top: 3rem; 
+}
+
+.skills-parcentige li{
+	list-style: none;
+	display: inline-block;
+}
+.skills-parcentige{
+	padding-bottom: 13rem;
+}
+
+	/******************************
+	Portfolio Section
+	******************************/
+
+.portfolio{
+	width: 100%;
+	height: 100%;
+	padding: 5rem 0;
+}
+.portfolio h2{
+	font-weight: bold;
+}
+.portfolio li{
+	padding: 1rem;
+	font-weight: bold;
+}
+
+
+
+	/******************************
+	Clients Reaction
+	******************************/
+
+.clients-reaction{
+	background-color: #f4f4f4;
+	padding: 4rem 0;
+}
+.clients-reaction h2{
+	font-weight: bold;
+}
+.clients-reaction img{
+	width: 4rem;
+	height: 4rem;
+	margin-left: 1rem;
+}
+
+.carousel-indicators{
+	position: relative;
+	top: 17rem;
+	padding: 1rem 0;
+}
+.carousel-indicators li{
+	transition: .30s;
+	background-color: #c1baba;
+}
+.carousel-indicators li:active{
+	background-color: red;
+}
+.carousel-inner .card{
+	padding: 1.5rem;
+}
+.carousel-inner .card h6{
+	margin: 0;
+	padding-top: .5rem;
+}
+.job-position{
+	font-size: 14px;
+}
+
+    /********
+    Hire Section
+    *********/
+
+.hire-me{
+	background-image: url(images/hire_me_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 11rem;
+}
+
+	/********
+	Form Section 
+	*********/
+
+.form-area{
+	padding: 70px 0;
+	background-color: #f5f5f5;
+}
+.form-area input{
+	padding: 10px;
+	border-radius: 4px;
+	margin: 8px 0;
+}
+
+.form-area button{
+	margin: 20px 0;
+}
+.massage-space{
+	padding-bottom: 80px;
+}
+.form-area .contact{
+	position: relative;
+}
+.contact img{
+	width: 70%;
+	float: right;
+}
+.form-area .dribble{
+	position: absolute;
+	top: -2rem;
+	right: 11rem;
+}
+.form-area .uplabs{
+	position: absolute;
+	top: 3rem;
+	left:8rem;
+}
+.form-area .pinterest{
+	position: absolute;
+	top: 3rem;
+	right: 2rem;
+}
+.form-area .behance{
+	position: absolute;
+	left: 12rem;
+	bottom: 5rem;
+}
+.form-area .like{
+	position: absolute;
+	right: 0rem;
+	bottom: 2rem;
+}
+
+	/********
+	Footer Section 
+	*********/
+
+.footer{
+	background-color: #191741;
+	border-bottom: 1px solid #797777;
+	padding-bottom: 1rem;
+}
+.footer .hamlin-section{
+	padding-left: 2rem;
+}
+.footer .navigation-section{
+	padding-left: 7.3rem;
+}
+.footer .support-section{
+	padding-left: 5rem;
+}
+.footer .follow-section{
+	padding-left: 3rem;
+}
+
+.footer h5{
+	padding: 35px 0;
+}
+.footer h6{
+	color: #fff;
+	font-weight: bold;
+	padding: 40px 0px 15px 0px;
+}
+.footer li{
+	list-style: none;
+	padding-bottom: 5px;
+}
+.footer .list-inline li{
+	display: inline;
+	padding-right: 1rem;
+}
+.footer li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.footer li a i:hover{
+	color: #639c64;
+}
+.footer-2{
+	background-color: #0e0c38;
+	padding: 30px 0;
+}
+.footer-2 i{
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 50%;
+	padding: .5rem;
+}
+.footer-2 p{
+	margin: 0;
+}
+
+.footer .input-group span{
+	   background-color: red;
+    border: navajowhite;
+    color: #fff;
+}
+
+
+/*----------
+Others CSS
+-----------*/
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px){
+	.underline-red{
+	left: 30%;
+	width: 100px;
+	height: 3px;
+	}
+	.center-text{
+	margin: 0 20px;
+    }
+    .about-me {
+    background-color: #DADEE2;
+    padding: 15px 30px;
+	}
+	.about-me h3{
+	padding: 10px 0px 5px 0px;
+	}
+	.about-me p{
+	padding: 10px 0;
+	}
+    .portfolio li{
+	padding-left: 10px;
+    }
+    .portfolio li a{
+	padding-bottom: 4px;
+   }
+    .hire-me button{
+    margin-top: 60px;
+    }
+	.form-area .massage{
+	padding-bottom: 30px;
+	}
+	.footer-2 h5{
+		font-size: 13px;
+	}
+	.footer-2 p{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.underline-red{
+	left: 35%;
+	width: 150px;
+	}
+	.center-text{
+	margin: 0 30px;
+    }
+}
+@media screen and (max-width: 992px){
+	.underline-red{
+	left: 40%;
+	width: 150px;
+	}
+	.center-text{
+	margin: 0 40px;
+	}
+@media screen and (max-width: 1200px){
+
+}
